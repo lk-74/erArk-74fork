@@ -1,0 +1,78 @@
+
+版本信息：2024.2.21
+最近输入指令：['返回', '5', '返回', '3', '平然', '3', '返回', '返回', '0', '博士办公室', '4', '0', '返回', '15', '15', '15', '93', '1', '能力、经验与宝珠', '返回', '69']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 361, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 564, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 2107, in handle_official_work
+    update.game_update_flow(60)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 70, in init_character_behavior
+    character_behavior(character_id, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 173, in character_behavior
+    character_aotu_change_value(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 854, in character_aotu_change_value
+    now_character_data.state[15] += int(add_time)
+TypeError: 'int' object is not subscriptable
+
+版本信息：2024.2.21
+最近输入指令：['6', '返回', '5', '返回', '5', '返回', '3', '平然', '3', '返回', '返回', '0', '博士办公室', '4', '0', '0', '11', '15', '15', '15', '93']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 361, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 564, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 498, in handle_hypnosis_one
+    update.game_update_flow(10)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 70, in init_character_behavior
+    character_behavior(character_id, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 173, in character_behavior
+    character_aotu_change_value(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 858, in character_aotu_change_value
+    logging.warning("addtime length " + add_time)
+TypeError: can only concatenate str (not "int") to str

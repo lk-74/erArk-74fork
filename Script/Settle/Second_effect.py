@@ -1,3 +1,4 @@
+import logging
 import datetime
 from types import FunctionType
 from Script.Design import (
@@ -1107,7 +1108,7 @@ def handle_add_small_disgust(
     change_data -- 状态变更信息记录对象
     now_time -- 结算的时间
     """
-
+    logging.warning("add_settle_second_behavior_effect : ADD_SMALL_DISGUST")
     character_data: game_type.Character = cache.character_data[character_id]
 
     now_add_lust = 100
@@ -1634,7 +1635,7 @@ def handle_add_middle_disgust(
     change_data -- 状态变更信息记录对象
     now_time -- 结算的时间
     """
-
+    logging.warning("add_settle_second_behavior_effect : ADD_MIDDLE_DISGUST")
     character_data: game_type.Character = cache.character_data[character_id]
 
     now_add_lust = 500
@@ -2161,7 +2162,7 @@ def handle_add_large_disgust(
     change_data -- 状态变更信息记录对象
     now_time -- 结算的时间
     """
-
+    logging.warning("add_settle_second_behavior_effect : ADD_LARGE_DISGUST")
     character_data: game_type.Character = cache.character_data[character_id]
 
     now_add_lust = 1000

@@ -850,6 +850,14 @@ def character_aotu_change_value(character_id: int):
         now_character_data.pregnancy.milk += add_milk
         now_character_data.pregnancy.milk = min(now_character_data.pregnancy.milk,now_character_data.pregnancy.milk_max)
 
+    if ((now_character_data.hypnosis.hypnosis_degree > 0) & (int(add_time) >= 10) & (character_id != 0)):
+        #now_character_data.juel[15] += add_time
+        #character_data: game_type.Character = cache.character_data[character_id]
+        #status_value = 0
+        #status_value = character_data.status_data[15]
+        #logging.warning("addtime length " + str(add_time))
+        cache.character_data[character_id].status_data[15] += int(add_time / 10)
+
     if character_id == 0:
 
         # 非H模式下结算玩家的射精值减少

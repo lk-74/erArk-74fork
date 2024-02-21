@@ -1,3 +1,4 @@
+import logging
 import datetime
 from types import FunctionType
 from Script.Design import (
@@ -3061,6 +3062,13 @@ def handle_target_add_small_disgust(
     target_data: game_type.Character = cache.character_data[character_data.target_character_id]
     if target_data.dead:
         return
+
+    if (target_data.sp_flag.unconscious_h):
+        return
+    
+    if (target_data.hypnosis.hypnosis_degree >= 50):
+        return
+    
     target_data.status_data.setdefault(20, 0)
     now_lust = target_data.status_data[20]
     now_lust_multiple = 10 + now_lust / 10
@@ -5499,7 +5507,7 @@ def handle_low_obscenity_failed_adjust(
 
         # 不需要再进行该判断
         # if not character.calculation_instuct_judege(0,character_data.target_character_id,"初级骚扰"):
-
+        #logging.warning("add_settle_behavior_effect : LOW_OBSCENITY_FAILED_ADJUST")
         change_data.target_change.setdefault(target_data.cid, game_type.TargetChange())
         target_change = change_data.target_change[target_data.cid]
         # 加反感
@@ -5521,6 +5529,7 @@ def handle_low_obscenity_failed_adjust(
         character_handle.add_favorability(
             character_id, target_data.cid, minus_favorability, change_data, target_change, now_time
         )
+        
 
 
 @settle_behavior.add_settle_behavior_effect(constant_effect.BehaviorEffect.HIGH_OBSCENITY_FAILED_ADJUST)
@@ -5546,7 +5555,7 @@ def handle_high_obscenity_failed_adjust(
 
         # 不需要再进行该判断
         # if not character.calculation_instuct_judege(0,character_data.target_character_id,"严重骚扰"):
-
+        #logging.warning("add_settle_behavior_effect : HIGH_OBSCENITY_FAILED_ADJUST")
         change_data.target_change.setdefault(target_data.cid, game_type.TargetChange())
         target_change = change_data.target_change[target_data.cid]
         # 加反感
@@ -5600,7 +5609,7 @@ def handle_do_h_failed_adjust(
 
         # 不需要再进行该判断
         # if not character.calculation_instuct_judege(0,character_data.target_character_id,"严重骚扰"):
-
+        #logging.warning("add_settle_behavior_effect : DO_H_FAILED_ADJUST")
         change_data.target_change.setdefault(target_data.cid, game_type.TargetChange())
         target_change = change_data.target_change[target_data.cid]
         # 加反感

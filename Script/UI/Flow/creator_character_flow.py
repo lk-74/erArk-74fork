@@ -910,6 +910,7 @@ class Character_Bonus:
                 cache.rhodes_island.materials_resouce[1] = 50000
                 cache.rhodes_island.materials_resouce[2] = 6000
                 cache.rhodes_island.materials_resouce[4] = 100
+                cache.rhodes_island.materials_resouce[3] = 9999
                 cache.first_bonus[first_bonus_id] = True
             else:
                 fail_flag = True
