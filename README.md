@@ -42,5 +42,5 @@
     Line 4804
     add cum amount to stomach
     add cum amount to obedience and submission
-    食用加料食物会将食物内的精液加到对象嘴里
+    食用加料食物会将食物内的精液加到对象嘴里（但是污渍积累太多如何去除呢）
     根据食用的精液量增加恭顺和屈服（个人喜好而已，过于破坏平衡建议拿掉）

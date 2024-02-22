@@ -32,3 +32,4 @@ save
 
 # 错误log
 error.log
+data/data.json
