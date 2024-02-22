@@ -892,6 +892,8 @@ class System_Setting:
         """ 是否自动升级玩家的能力 """
         self.npc_ability_auto_lvup: bool = True
         """ 是否自动升级NPC的能力 """
+        self.choose_shoot_where: bool = False
+        """ 每次射精时手动选择射在哪里 """
 
 
 class Character:
@@ -1120,7 +1122,7 @@ class Cache:
         self.text_wait: int = 0
         """ 绘制文本输出等待时间 """
         self.scene_panel_show: List = [True, True, True, True, True]
-        """ 场景面板中的子面板显示情况,0状态,1服装,2H状态,3污浊,4图片 """
+        """ 场景面板中的子面板显示情况,0状态,1服装,2身体,3H状态,4图片 """
         self.map_data: Dict[str, Map] = {}
         """ 游戏地图数据 地图路径:地图数据 """
         self.scene_data: Dict[str, Scene] = {}
