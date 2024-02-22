@@ -266,15 +266,21 @@ class SeeFoodListByFoodNameDraw:
         cache.makefood_data[self.food_cid][self.food_uid].maker = character_data.name
         cache.makefood_data[self.food_cid][self.food_uid].special_seasoning = self.special_seasoning
         cache.makefood_data[self.food_cid][self.food_uid].quality = character_data.ability[43]
+
         # 药物调味则扣除药物
         if self.special_seasoning > 100:
             character_data.item[self.special_seasoning] -= 1
+
+        if self.special_seasoning :
+            cache.makefood_data[self.food_cid][self.food_uid].special_seasoning_amount = 20
+
         # 放到玩家背包里
         character_data.food_bag[self.food_uid] = cache.makefood_data[self.food_cid][self.food_uid]
         # 烹饪行为
         character_data.behavior.food_name = self.food_name
         character_data.behavior.make_food_time = self.make_food_time
         character_data.behavior.food_seasoning = self.special_seasoning
+        character_data.behavior.food_seasoning_amount = 2
         character_data.behavior.behavior_id = constant.Behavior.MAKE_FOOD
         character_data.behavior.duration = self.make_food_time
         character_data.state = constant.CharacterStatus.STATUS_MAKE_FOOD

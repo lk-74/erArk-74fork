@@ -486,6 +486,14 @@ def judge_accept_special_seasoning_food(character_id: int):
             if target_data.talent[31] or target_data.talent[40]:
                 target_data.sp_flag.find_food_weird = 1
                 return 1
+            
+            if (target_data.hypnosis.hypnosis_degree >= 100):
+                target_data.sp_flag.find_food_weird = 1
+                return 1
+
+            if (target_data.hypnosis.hypnosis_degree >= 50):
+                target_data.sp_flag.find_food_weird = 0
+                return 1
 
             # 精液_巧妙混合
             if pl_character_data.behavior.food_seasoning == 11:
@@ -503,6 +511,15 @@ def judge_accept_special_seasoning_food(character_id: int):
                     return 0
             # 精液_直接盖上
             elif pl_character_data.behavior.food_seasoning == 12:
+                            
+                if (target_data.hypnosis.hypnosis_degree >= 100):
+                    target_data.sp_flag.find_food_weird = 1
+                    return 1
+
+                if (target_data.hypnosis.hypnosis_degree >= 50):
+                    target_data.sp_flag.find_food_weird = 0
+                    return 1
+            
                 # 4级爱情系或至少3级隶属系的话才接受
                 for talent_id in {204,213,214}:
                     if target_data.talent[talent_id]:

@@ -1151,8 +1151,8 @@ def handle_penetrating_vision_on(
     if character_data.dead:
         return
     character_data.pl_ability.visual = True
-    character_data.sanity_point = max(character_data.sanity_point - 5, 0)
-    change_data.sanity_point -= 5
+    character_data.sanity_point = max(character_data.sanity_point - 1, 0)
+    change_data.sanity_point -= 1
 
 
 @settle_behavior.add_settle_behavior_effect(constant_effect.BehaviorEffect.PENETRATING_VISION_OFF)
@@ -4803,6 +4803,7 @@ def handle_eat_add_just(
 
         # 精液食物则加精液经验
         if character_data.behavior.food_seasoning in {11,12}:
+            logging.warning("cum food amount "+str(character_data.behavior.food_seasoning_amount))
             default_experience.handle_target_add_1_cumsdrink_experience(0,add_time=add_time,change_data=change_data,now_time=now_time)
         # 药物食物则获得对应药物效果
         elif character_data.behavior.food_seasoning == 102: # 事后避孕药

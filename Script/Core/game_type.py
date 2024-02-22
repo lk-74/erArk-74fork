@@ -138,6 +138,8 @@ class Food:
         """ 食谱id """
         self.special_seasoning: int = 0
         """ 调味类型 """
+        self.special_seasoning_amount: int = 10
+        """ 调味量 """
         # self.cook: bool = False
         # """ 可烹饪 """
         # self.eat: bool = False
@@ -626,6 +628,9 @@ class Behavior:
         """ 前提结算用:做饭指令用时 """
         self.food_seasoning: int = 0
         """ 前提结算用:食物调味类型 0正常，其他见Seasoning.csv """
+        self.food_seasoning_amount: int = 1
+        """ 前提结算用:食物调味类型 0正常，其他见Seasoning.csv """
+
         self.pan_name: str = ""
         """ 前提结算用:内裤名字 """
         self.socks_name: str = ""

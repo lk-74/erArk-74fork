@@ -76,3 +76,346 @@ Traceback (most recent call last):
   File "d:\erArk-74fork\Script\Design\character_behavior.py", line 858, in character_aotu_change_value
     logging.warning("addtime length " + add_time)
 TypeError: can only concatenate str (not "int") to str
+
+版本信息：2024.2.21-1
+最近输入指令：['1', '返回', '1', '返回', '3', '3', '返回', '11', '返回', '返回', '猥亵', '12', '14', '3', '2', '返回', '4', '1', '1', '0', '博士办公室']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 126, in see_map_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\see_map_panel.py", line 200, in draw
+    yrn = flow_handle.askfor_all(return_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\see_map_panel.py", line 233, in move_now
+    character_move.own_charcter_move(scene_path)
+  File "d:\erArk-74fork\Script\Design\character_move.py", line 40, in own_charcter_move
+    update.game_update_flow(now_need_time)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 61, in init_character_behavior
+    character_behavior(0, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 182, in character_behavior
+    handle_talent.gain_talent(character_id,now_gain_type = 0)
+  File "d:\erArk-74fork\Script\Design\handle_talent.py", line 87, in gain_talent
+    npc_gain_and_lost_cumflation(character_id)
+  File "d:\erArk-74fork\Script\Design\handle_talent.py", line 172, in npc_gain_and_lost_cumflation
+    abdomen_all_semen += character_data.dirty.body_semen[i][1]
+IndexError: list index out of range
+
+版本信息：2024.2.21-1
+最近输入指令：['4', '1', '返回', '1', '返回', '3', '3', '返回', '11', '返回', '返回', '猥亵', '12', '14', '3', '2', '返回', '4', '1', '1', '28']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 369, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 572, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 653, in handle_take_shower
+    update.game_update_flow(15)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 69, in init_character_behavior
+    character_behavior(character_id, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 182, in character_behavior
+    handle_talent.gain_talent(character_id,now_gain_type = 0)
+  File "d:\erArk-74fork\Script\Design\handle_talent.py", line 87, in gain_talent
+    npc_gain_and_lost_cumflation(character_id)
+  File "d:\erArk-74fork\Script\Design\handle_talent.py", line 172, in npc_gain_and_lost_cumflation
+    abdomen_all_semen += character_data.dirty.body_semen[i][1]
+IndexError: list index out of range
+
+版本信息：2024.2.21-1
+最近输入指令：['93', '93', '93', '93', '猥亵', '性爱', '0', '博士办公室', '4', '2', '15', '15', '131', '0', '151', '151', '151', '151', '151', '151', '151']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 369, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 572, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 3229, in handle_handjob
+    update.game_update_flow(10)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 61, in init_character_behavior
+    character_behavior(0, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 145, in character_behavior
+    judge_character_status(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 316, in judge_character_status
+    now_panel = settle_behavior.handle_settle_behavior(character_id, end_time, event_type_now)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 39, in handle_settle_behavior
+    check_second_effect(character_id, change_data)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 460, in check_second_effect
+    orgasm_effect(character_id)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 613, in orgasm_effect
+    now_draw.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 90, in draw
+    self.handle_panel.update()
+  File "d:\erArk-74fork\Script\UI\Moudle\panel.py", line 685, in update
+    value_draw = self.draw_type(value, value_width, is_button, self.num_button, index)
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 210, in __init__
+    is_button = self.part_can_choose()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 283, in part_can_choose
+    if isinstance(body_cloth[body_part], list):
+IndexError: list index out of range
+
+版本信息：2024.2.21-1
+最近输入指令：['93', '93', '93', '93', '猥亵', '性爱', '0', '博士办公室', '4', '2', '15', '15', '131', '1', '152', '152', '152', '152', '152', '152', '152']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 369, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 572, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 3246, in handle_blowjob
+    update.game_update_flow(10)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 61, in init_character_behavior
+    character_behavior(0, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 145, in character_behavior
+    judge_character_status(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 316, in judge_character_status
+    now_panel = settle_behavior.handle_settle_behavior(character_id, end_time, event_type_now)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 39, in handle_settle_behavior
+    check_second_effect(character_id, change_data)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 460, in check_second_effect
+    orgasm_effect(character_id)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 613, in orgasm_effect
+    now_draw.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 90, in draw
+    self.handle_panel.update()
+  File "d:\erArk-74fork\Script\UI\Moudle\panel.py", line 685, in update
+    value_draw = self.draw_type(value, value_width, is_button, self.num_button, index)
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 210, in __init__
+    is_button = self.part_can_choose()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 283, in part_can_choose
+    if isinstance(body_cloth[body_part], list):
+IndexError: list index out of range
+
+版本信息：2024.2.21-1
+最近输入指令：['性爱', '0', '博士办公室', '4', '2', '47', '返回', '15', '15', '131', '0', '238', '2', '返回', '152', '152', '152', '152', '152', '152', '152']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 369, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 572, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 3246, in handle_blowjob
+    update.game_update_flow(10)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 61, in init_character_behavior
+    character_behavior(0, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 145, in character_behavior
+    judge_character_status(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 316, in judge_character_status
+    now_panel = settle_behavior.handle_settle_behavior(character_id, end_time, event_type_now)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 39, in handle_settle_behavior
+    check_second_effect(character_id, change_data)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 460, in check_second_effect
+    orgasm_effect(character_id)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 613, in orgasm_effect
+    now_draw.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 90, in draw
+    self.handle_panel.update()
+  File "d:\erArk-74fork\Script\UI\Moudle\panel.py", line 685, in update
+    value_draw = self.draw_type(value, value_width, is_button, self.num_button, index)
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 210, in __init__
+    is_button = self.part_can_choose()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 283, in part_can_choose
+    if isinstance(body_cloth[body_part], list):
+IndexError: list index out of range
+
+版本信息：2024.2.21-1
+最近输入指令：['93', '93', '93', '猥亵', '性爱', '0', '博士办公室', '4', '2', '15', '15', '15', '131', '0', '152', '152', '152', '152', '152', '152', '152']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 369, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 572, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 3246, in handle_blowjob
+    update.game_update_flow(10)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 61, in init_character_behavior
+    character_behavior(0, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 145, in character_behavior
+    judge_character_status(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 316, in judge_character_status
+    now_panel = settle_behavior.handle_settle_behavior(character_id, end_time, event_type_now)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 39, in handle_settle_behavior
+    check_second_effect(character_id, change_data)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 460, in check_second_effect
+    orgasm_effect(character_id)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 613, in orgasm_effect
+    now_draw.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 90, in draw
+    self.handle_panel.update()
+  File "d:\erArk-74fork\Script\UI\Moudle\panel.py", line 685, in update
+    value_draw = self.draw_type(value, value_width, is_button, self.num_button, index)
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 210, in __init__
+    is_button = self.part_can_choose()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 283, in part_can_choose
+    if isinstance(body_cloth[body_part], list):
+IndexError: list index out of range
+
+版本信息：2024.2.21-1
+最近输入指令：['93', '93', '93', '93', '猥亵', '性爱', '0', '博士办公室', '4', '2', '15', '15', '131', '0', '151', '151', '151', '151', '151', '151', '151']
+Traceback (most recent call last):
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 55, in init
+    run_main_flow()
+  File "d:\erArk-74fork\Script\Core\game_init.py", line 45, in run_main_flow
+    main_flow()
+  File "d:\erArk-74fork\Script\Design\start_flow.py", line 16, in start_frame
+    constant.panel_data[cache.now_panel_id]()
+  File "d:\erArk-74fork\Script\Design\handle_panel.py", line 18, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\UI\Flow\normal_flow.py", line 42, in in_scene_flow
+    now_panel.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 369, in draw
+    flow_handle.askfor_all(ask_list)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 274, in askfor_all
+    _cmd_deal(order)
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 191, in _cmd_deal
+    cmd_map[order_number]()
+  File "d:\erArk-74fork\Script\Core\flow_handle.py", line 118, in run_func
+    cmd_func(*arg, **kw)
+  File "d:\erArk-74fork\Script\UI\Panel\in_scene_panel.py", line 572, in handle_instruct
+    handle_instruct.handle_instruct(instruct_id)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 47, in handle_instruct
+    constant.handle_instruct_data[instruct]()
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 63, in return_wrapper
+    return func(*args, **kwargs)
+  File "d:\erArk-74fork\Script\Design\handle_instruct.py", line 3229, in handle_handjob
+    update.game_update_flow(10)
+  File "d:\erArk-74fork\Script\Design\update.py", line 15, in game_update_flow
+    character_behavior.init_character_behavior()
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 61, in init_character_behavior
+    character_behavior(0, cache.game_time)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 145, in character_behavior
+    judge_character_status(character_id)
+  File "d:\erArk-74fork\Script\Design\character_behavior.py", line 316, in judge_character_status
+    now_panel = settle_behavior.handle_settle_behavior(character_id, end_time, event_type_now)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 39, in handle_settle_behavior
+    check_second_effect(character_id, change_data)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 460, in check_second_effect
+    orgasm_effect(character_id)
+  File "d:\erArk-74fork\Script\Design\settle_behavior.py", line 613, in orgasm_effect
+    now_draw.draw()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 90, in draw
+    self.handle_panel.update()
+  File "d:\erArk-74fork\Script\UI\Moudle\panel.py", line 685, in update
+    value_draw = self.draw_type(value, value_width, is_button, self.num_button, index)
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 210, in __init__
+    is_button = self.part_can_choose()
+  File "d:\erArk-74fork\Script\UI\Panel\ejaculation_panel.py", line 283, in part_can_choose
+    if isinstance(body_cloth[body_part], list):
+IndexError: list index out of range
