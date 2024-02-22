@@ -4805,6 +4805,26 @@ def handle_eat_add_just(
         if character_data.behavior.food_seasoning in {11,12}:
             logging.warning("cum food amount "+str(character_data.behavior.food_seasoning_amount))
             default_experience.handle_target_add_1_cumsdrink_experience(0,add_time=add_time,change_data=change_data,now_time=now_time)
+            default_experience.handle_target_add_1_cums_experience(0,add_time=add_time,change_data=change_data,now_time=now_time)
+            cache.shoot_position = 2    # 口腔
+            target_data.h_state.shoot_position_body = 2
+            target_data.dirty.body_semen[2][1] += character_data.behavior.food_seasoning_amount
+            target_data.dirty.body_semen[2][3] += character_data.behavior.food_seasoning_amount
+            target_data.dirty.body_semen[2][2] = attr_calculation.get_semen_now_level(target_data.dirty.body_semen[2][1], 2, 0)
+
+            #character_data.status_data[10] += character_data.behavior.food_seasoning_amount # 恭顺
+            #character_data.status_data[15] += character_data.behavior.food_seasoning_amount # 屈服
+
+            target_change: game_type.TargetChange = change_data.target_change[target_data.cid]
+            target_change.status_data.setdefault(15, 0)
+            target_data.status_data[15] += character_data.behavior.food_seasoning_amount
+            target_change.status_data[15] += character_data.behavior.food_seasoning_amount
+
+            target_change: game_type.TargetChange = change_data.target_change[target_data.cid]
+            target_change.status_data.setdefault(10, 0)
+            target_data.status_data[10] += character_data.behavior.food_seasoning_amount
+            target_change.status_data[10] += character_data.behavior.food_seasoning_amount  # 恭顺
+
         # 药物食物则获得对应药物效果
         elif character_data.behavior.food_seasoning == 102: # 事后避孕药
             handle_target_no_pregnancy_from_last_h(0,add_time=add_time,change_data=change_data,now_time=now_time)

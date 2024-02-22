@@ -1,3 +1,4 @@
+import logging
 from typing import Tuple, Dict
 from types import FunctionType
 from uuid import UUID
@@ -5,6 +6,7 @@ from Script.Core import cache_control, game_type, get_text, flow_handle, text_ha
 from Script.Design import map_handle, cooking, update
 from Script.UI.Moudle import draw, panel
 from Script.Config import game_config, normal_config
+from Script.UI.Panel import ejaculation_panel
 
 cache: game_type.Cache = cache_control.cache
 """ 游戏缓存数据 """
@@ -271,8 +273,10 @@ class SeeFoodListByFoodNameDraw:
         if self.special_seasoning > 100:
             character_data.item[self.special_seasoning] -= 1
 
-        if self.special_seasoning :
-            cache.makefood_data[self.food_cid][self.food_uid].special_seasoning_amount = 20
+        if self.special_seasoning in {11,12} :
+            semen_text, semen_count = ejaculation_panel.common_ejaculation()
+            logging.warning("special_seasoning addind cum text["+str(semen_text)+"] amount["+str(semen_count)+"]")
+            cache.makefood_data[self.food_cid][self.food_uid].special_seasoning_amount = semen_count
 
         # 放到玩家背包里
         character_data.food_bag[self.food_uid] = cache.makefood_data[self.food_cid][self.food_uid]

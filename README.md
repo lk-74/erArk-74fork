@@ -21,11 +21,16 @@ Script\Settle\default.py
     Script\Design\character_behavior.py
     possible related code
 
-Script\Settle\default.py
-    L4711
-    TODO add cum amount to stomach
-
 Script\Design\cooking.py
     Line 489
     Line 514
     if hypnosis then accept cum food
+
+Script\UI\Panel\make_food_panel.py
+    Line 276
+    if semen food then player cum into it
+
+Script\Settle\default.py
+    Line 4804
+    add cum amount to stomach
+    add cum amount to obedience and submission
